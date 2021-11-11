@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-int main()
-{
-
+int main() {
   float menor;
   float maior;
   float mediaTotal;
   float iterar;
-  float Number;
+  float number;
   float Num;
   float Media;
   float MediaGeral;
@@ -17,37 +15,34 @@ int main()
   mediaTotal = 0;
   iterar = 0;
 
-  printf ("Entre com o valor de N ");
-  scanf("%f",&Number);
+  printf("Entre com o valor de N ");
+  scanf("%f", &number);
 
+  if (number <= 0) printf("N tem que ser maior que 0\n");
 
-  if (Number<=0)
-  	printf("N tem que ser maior que 0\n");
+  while (iterar < number) {
+    printf("Digite Num\n");
+    scanf("%f", &Num);
 
-  while (iterar<Number){
-  	printf("Digite Num\n");
-  	scanf("%f",&Num);
- 
- 	  if(Num>maior){
-  	  maior=Num;
+    if (Num > maior) {
+      maior = Num;
       printf("maior=Num\n");
- 	  }
- 	  if (Num<menor){
-  	  menor=Num;
+    }
+    if (Num < menor) {
+      menor = Num;
       printf("menor=Num\n");
- 	  }
-      iterar=iterar+1;
-      mediaTotal=mediaTotal+Num;
+    }
+    iterar = iterar + 1;
+    mediaTotal = mediaTotal + Num;
   }
-    Media = (maior+menor)/2;
-    MediaGeral = mediaTotal/Number;
-    if (Media<MediaGeral)
-      printf("Media Geral é maior que a media do maior pelo menor \n");  
+  Media = (maior + menor) / 2;
+  MediaGeral = mediaTotal / number;
+  if (Media < MediaGeral)
+    printf("Media Geral é maior que a media do maior pelo menor \n");
 
-    if (Media>MediaGeral)
-      printf("Media Geral é menor que a media do maior pelo menor \n");
+  if (Media > MediaGeral)
+    printf("Media Geral é menor que a media do maior pelo menor \n");
 
-    else 
+  else
     printf("Media Geral é igual a media do maior pelo menor \n");
-
 }
