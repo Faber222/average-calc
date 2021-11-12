@@ -38,11 +38,11 @@ int main() {
   average = (bigger + smaller) / 2;
   overallAverage = totalAverage / number;
   if (average < overallAverage)
-    printf("Media geral é maior que a average do maior pelo menor \n");
+    printf("Média geral é maior que a media do maior pelo menor \n");
 
   if (average > overallAverage)
-    printf("Media geral é menor que a average do maior pelo menor \n");
+    printf("Média geral é menor que a média do maior pelo menor \n");
 
   else
-    printf("Media geral é igual a average do maior pelo menor \n");
+    printf("Média geral é igual a média do maior pelo menor \n");
 }
