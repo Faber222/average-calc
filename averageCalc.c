@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int main() {
-  float menor;
-  float maior;
-  float mediaTotal;
+  float smaller;
+  float bigger;
+  float totalAverage;
   float iterar;
   float number;
-  float Num;
-  float Media;
-  float MediaGeral;
+  float num;
+  float average;
+  float overallAverage;
 
-  menor = 100000;
-  maior = 0;
-  mediaTotal = 0;
+  smaller = 100000;
+  bigger = 0;
+  totalAverage = 0;
   iterar = 0;
 
   printf("Entre com o valor de N ");
@@ -21,28 +21,28 @@ int main() {
   if (number <= 0) printf("N tem que ser maior que 0\n");
 
   while (iterar < number) {
-    printf("Digite Num\n");
-    scanf("%f", &Num);
+    printf("Digite num\n");
+    scanf("%f", &num);
 
-    if (Num > maior) {
-      maior = Num;
-      printf("maior=Num\n");
+    if (num > bigger) {
+      bigger = num;
+      printf("maior=num\n");
     }
-    if (Num < menor) {
-      menor = Num;
-      printf("menor=Num\n");
+    if (num < smaller) {
+      smaller = num;
+      printf("menor=num\n");
     }
     iterar = iterar + 1;
-    mediaTotal = mediaTotal + Num;
+    totalAverage = totalAverage + num;
   }
-  Media = (maior + menor) / 2;
-  MediaGeral = mediaTotal / number;
-  if (Media < MediaGeral)
-    printf("Media Geral é maior que a media do maior pelo menor \n");
+  average = (bigger + smaller) / 2;
+  overallAverage = totalAverage / number;
+  if (average < overallAverage)
+    printf("Media geral é maior que a average do maior pelo menor \n");
 
-  if (Media > MediaGeral)
-    printf("Media Geral é menor que a media do maior pelo menor \n");
+  if (average > overallAverage)
+    printf("Media geral é menor que a average do maior pelo menor \n");
 
   else
-    printf("Media Geral é igual a media do maior pelo menor \n");
+    printf("Media geral é igual a average do maior pelo menor \n");
 }
