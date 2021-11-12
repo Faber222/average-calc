@@ -18,31 +18,33 @@ int main() {
   printf("Entre com o valor de N ");
   scanf("%f", &number);
 
-  if (number <= 0) printf("N tem que ser maior que 0\n");
+  if (number <= 0)
+    printf("N tem que ser maior que 0\n");
+  else {
+    while (iterar < number) {
+      printf("Digite num\n");
+      scanf("%f", &num);
 
-  while (iterar < number) {
-    printf("Digite num\n");
-    scanf("%f", &num);
+      if (num > bigger) {
+        bigger = num;
+        printf("maior=num\n");
+      }
+      if (num < smaller) {
+        smaller = num;
+        printf("menor=num\n");
+      }
+      iterar = iterar + 1;
+      totalAverage = totalAverage + num;
+    }
+    average = (bigger + smaller) / 2;
+    overallAverage = totalAverage / number;
+    if (average < overallAverage)
+      printf("Média geral é maior que a media do maior pelo menor \n");
 
-    if (num > bigger) {
-      bigger = num;
-      printf("maior=num\n");
-    }
-    if (num < smaller) {
-      smaller = num;
-      printf("menor=num\n");
-    }
-    iterar = iterar + 1;
-    totalAverage = totalAverage + num;
+    if (average > overallAverage)
+      printf("Média geral é menor que a média do maior pelo menor \n");
+
+    else
+      printf("Média geral é igual a média do maior pelo menor \n");
   }
-  average = (bigger + smaller) / 2;
-  overallAverage = totalAverage / number;
-  if (average < overallAverage)
-    printf("Média geral é maior que a media do maior pelo menor \n");
-
-  if (average > overallAverage)
-    printf("Média geral é menor que a média do maior pelo menor \n");
-
-  else
-    printf("Média geral é igual a média do maior pelo menor \n");
 }

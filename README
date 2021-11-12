@@ -1,0 +1,12 @@
+----------------------------------------------------------------------------------
+This is a code create by Faber Bernardo Júnior!
+With the idea to do a average calculator, based in c.
+I made this in my free time using my knoledge in the language c.
+This is not perfect, but it's a begin!
+
+----------------------------------------------------------------------------------
+The logic is simple, we have eigh floats, this floats are our variables.
+First, i say that the "smaller" is equal to a number i like, ex smaller=100000.
+Second i say bigger is equal to a zero, because we need to compare on the calc.
+Then i put the totalAverage=0 and iterate=0, because i need the values ​​to be accumulated in each code run.
+Initially i do a print on the screen, asking the person to put a number, then i scan the screen to read what they put.
