@@ -26,9 +26,10 @@ The value average and overallAverage is a float that store the calc until the en
 If you wanna help me to make my code better, just send me a message in my email written below:
 faberbernardo77@gmail.com
 
+<<<<<<<
 All the code is made by me.
 I hope u enjoy the journey!
-<<<<<<<
+
 Tks.
 =======
 >>>>>>>
