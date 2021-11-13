@@ -28,7 +28,7 @@ faberbernardo77@gmail.com
 
 All the code is made by me.
 I hope u enjoy the journey!
-<<<<<<< HEAD:README.md
+
 Tks.
-=======
->>>>>>> 4fe5a021626a4e63acfdb1559015c02864afdd14:README
+
+
