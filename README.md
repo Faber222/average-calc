@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
 This is a code create by Faber Bernardo Júnior!
 With the idea to do a average calculator, based in c.
-I made this in my free time using my knoledge in the language c.
+I made this in my free time using my knowledge in the language c.
 This is not perfect, but it's a begin!
 
 ----------------------------------------------------------------------------------
@@ -28,4 +28,7 @@ faberbernardo77@gmail.com
 
 All the code is made by me.
 I hope u enjoy the journey!
+<<<<<<< HEAD:README.md
 Tks.
+=======
+>>>>>>> 4fe5a021626a4e63acfdb1559015c02864afdd14:README
