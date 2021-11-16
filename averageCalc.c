@@ -18,9 +18,10 @@ int main() {
   printf("Entre com o valor de N ");
   scanf("%f", &number);
 
-  if (number <= 0)
+  while (number <= 0){
     printf("N tem que ser maior que 0\n");
-  else {
+    scanf("%f", &number);
+  }
     while (iterar < number) {
       printf("Digite num\n");
       scanf("%f", &num);
@@ -47,4 +48,4 @@ int main() {
     else
       printf("Média geral é igual a média do maior pelo menor \n");
   }
-}
+
